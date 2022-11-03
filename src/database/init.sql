@@ -38,7 +38,6 @@ CREATE TABLE cart (
     completeddate TIMESTAMP
 );
 
-
 -- Example of Relational table --
 CREATE TABLE itemsincart(
     cartid INTEGER REFERENCES cart(cartid),
@@ -49,4 +48,23 @@ CREATE TABLE itemsincart(
     PRIMARY KEY (cartid,gunid,variantid) 
 );
 
+INSERT INTO guns (gunname) 
+VALUES 
+('Phantom'),
+('Vandal'),
+('Sheriff'),
+('Classic'),
+('Frenzy'),
+('Ghost'),
+('Shorty'),
+('Stinger'),
+('Spectre'),
+('Bucky'),
+('Judge'),
+('Guardian'),
+('Marshall'),
+('Operator'),
+('Odin'),
+('Ares'),
+('Bulldog')
 -- init.sql -> You type the schema aka the tables for the database
